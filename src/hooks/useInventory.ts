@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { InventoryItem, InventoryAlert, DashboardStats, ActivityLog } from '@/types/inventory';
 import { useAuth } from './useAuth';
@@ -15,7 +14,7 @@ const SAMPLE_INVENTORY: InventoryItem[] = [
     name: 'A4 Premium Paper',
     category: 'Paper',
     quantity: 250,
-    unitPrice: 12.99,
+    unitPrice: 649.99,
     reorderPoint: 50,
     supplier: 'Paper Plus Suppliers',
     description: 'High-quality A4 printing paper, 80gsm',
@@ -31,7 +30,7 @@ const SAMPLE_INVENTORY: InventoryItem[] = [
     name: 'Black Toner Cartridge',
     category: 'Ink & Toners',
     quantity: 15,
-    unitPrice: 89.99,
+    unitPrice: 4499.99,
     reorderPoint: 25,
     supplier: 'Ink Solutions Ltd',
     description: 'Compatible black toner for HP LaserJet series',
@@ -47,7 +46,7 @@ const SAMPLE_INVENTORY: InventoryItem[] = [
     name: 'Large Format Printer',
     category: 'Equipment',
     quantity: 2,
-    unitPrice: 2499.99,
+    unitPrice: 124999.99,
     reorderPoint: 1,
     supplier: 'Digital Print Equipment Co',
     description: 'Professional large format inkjet printer',
