@@ -33,7 +33,7 @@ export function useInventory() {
         name: item.name,
         category: item.category,
         quantity: item.quantity,
-        unitPrice: parseFloat(item.unit_price),
+        unitPrice: parseFloat(item.unit_price.toString()),
         reorderPoint: item.reorder_point,
         supplier: item.supplier,
         description: item.description,
@@ -183,7 +183,7 @@ export function useInventory() {
           name: item.name,
           category: item.category,
           quantity: item.quantity,
-          unit_price: item.unitPrice.toString(),
+          unit_price: item.unitPrice,
           reorder_point: item.reorderPoint,
           supplier: item.supplier,
           description: item.description,
@@ -219,7 +219,7 @@ export function useInventory() {
       if (updates.name) updateData.name = updates.name;
       if (updates.category) updateData.category = updates.category;
       if (updates.quantity !== undefined) updateData.quantity = updates.quantity;
-      if (updates.unitPrice !== undefined) updateData.unit_price = updates.unitPrice.toString();
+      if (updates.unitPrice !== undefined) updateData.unit_price = updates.unitPrice;
       if (updates.reorderPoint !== undefined) updateData.reorder_point = updates.reorderPoint;
       if (updates.supplier) updateData.supplier = updates.supplier;
       if (updates.description !== undefined) updateData.description = updates.description;
