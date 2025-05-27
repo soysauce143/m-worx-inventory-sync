@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { AuthProvider, useAuth } from '@/hooks/useAuth';
 import { LoginForm } from '@/components/LoginForm';
@@ -7,6 +6,7 @@ import { Navigation } from '@/components/Navigation';
 import { Dashboard } from '@/components/Dashboard';
 import { InventoryList } from '@/components/InventoryList';
 import { AddEditItem } from '@/components/AddEditItem';
+import { AlertsManagement } from '@/components/AlertsManagement';
 
 function AppContent() {
   const { isAuthenticated, isLoading } = useAuth();
@@ -60,12 +60,7 @@ function AppContent() {
           />
         );
       case 'alerts':
-        return (
-          <div className="text-center py-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Alerts & Notifications</h2>
-            <p className="text-gray-600">Alert management interface coming soon...</p>
-          </div>
-        );
+        return <AlertsManagement />;
       case 'settings':
         return (
           <div className="text-center py-12">
